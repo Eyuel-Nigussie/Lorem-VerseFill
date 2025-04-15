@@ -7,17 +7,44 @@
     "vscode": "^1.98.0"
   },
   "categories": [
-    "Other"
+    "Snippets"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:versefill.generateShort",
+    "onCommand:versefill.generateMedium",
+    "onCommand:versefill.generateLong",
+    "onCommand:versefill.generateCustom"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "lorem-VerseFill.helloWorld",
-        "title": "Hello World"
+        "command": "versefill.generateShort",
+        "title": "VerseFill: Generate Short Text (~100 words)"
+      },
+      {
+        "command": "versefill.generateMedium",
+        "title": "VerseFill: Generate Medium Text (~250 words)"
+      },
+      {
+        "command": "versefill.generateLong",
+        "title": "VerseFill: Generate Long Text (~500 words)"
+      },
+      {
+        "command": "versefill.generateCustom",
+        "title": "VerseFill: Generate Custom Length Text"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "VerseFill",
+      "properties": {
+        "versefill.includeReferences": {
+          "type": "boolean",
+          "default": false,
+          "description": "Include Bible verse references in the generated text"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
