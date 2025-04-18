@@ -3,6 +3,9 @@
 > Generate meaningful, non-repetitive, Bible-based placeholder text in your editor—just like Lorem Ipsum, but divinely inspired.
 
 ---
+> ⚠️ I'm working on this in short bursts—about 30 minutes at a time whenever I get the chance. I really like the concept and plan to use it in some of my personal projects. If you're interested, feel free to contribute and help make it even better!
+
+---
 
 ## 📖 What is VerseFill?
 
